@@ -1,0 +1,42 @@
+body > header {
+  background: -webkit-linear-gradient(bottom, #c5b07b, #a28f5f);
+  border-radius: 20px;
+  height: 100px;
+
+  h1 {
+    margin: 0;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+
+  h1,
+  nav,
+  ul,
+  li {
+    display: inline-block;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #fff;
+    font-family: "pricedownblack", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    line-height: 100px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+}
