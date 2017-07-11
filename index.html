@@ -2,83 +2,201 @@
 <html>
   <head>
     <title>Grand Theft Auto 3</title>
+    <meta name="description" content="Rockstar Games Presents the Grand Theft Auto 3 for the Playstation2">
+    <meta name="keywords" content="rockstar, games, Grand Theft Auto 3, Grand, Theft, Auto, Playstation, Playstation2, videogame, videogames">
   </head>
 
-  <body>
-    <header>
-      <h1>Grand Theft Auto 3</h1>
-      <nav>
-        <ul>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#info">Info</a></li>
-          <li><a href="#screens">Screens</a></li>
-          <li><a href="#movies">Movies</a></li>
-          <li><a href="#buy-now">Buy now</a></li>
-        </ul>
-      </nav>
+  <body class="has-fixed-nav">
+    <header class="main-header is-fixed-top">
+      <div class="container">
+        <nav class="navbar is-transparent">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="<%= require('./src/images/logo.png') %>" alt="Grande Theft Auto 3 logo" height="28">
+            </a>
+
+            <div id="navMenuToggler" class="navbar-burger burger" data-target="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#info">Info</a>
+              <a class="navbar-item" href="#locations">Locations</a>
+              <a class="navbar-item" href="#screens">Screens</a>
+              <a class="navbar-item" href="#buy-now">Buy now</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section id="#locations">
-      <h2>Locations</h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              <strong>Shoreside Vale</strong>
-              Suburban residential area
+    <section id="info" class="section content">
+      <div class="container">
+        <h2 class="title is-1">Grand Theft Auto 3</h2>
+        <h3 class="subtitle is-2">Liberty City, USA. Welcome to America's worst city.</h3>
+        <figure title="Grand Theft Auto 3 cover art">
+          <img src="<%= require('./src/images/cover.jpg') %>" alt="Cover art of Grand Theft Auto 3 media disc, displaying a police helicopter, two cars and the face of bandits">
+        </figure>
+        <p>You've been betrayed and left for dead. Now you're taking revenge, unless the city gets you first. Mob bosses need a favor, crooked cops need help and street gangs want you dead. You'll have to rob, steal and kill just to stay out of serious trouble. Anything can happen out here.</p>
+        <p>Featuring a fully 3-D living city, a combination of narrative driven and non-linear gameplay and a completely open environment, Grand Theft Auto III represents a huge leap forward in interactive entertainment. For the first time, players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city, in which anything can happen and probably will.</p>
+        <p>With a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, a huge array of street ready weapons and some of the seediest characters in video game history, Grand Theft Auto 3 is a sprawling epic which will show you that sometimes, crime can pay and sometimes it can pay you back. Available now for PlayStation®2, Xbox, PC and Macintosh.</p>
+      </div>
+    </section>
+
+    <section id="locations" class="section content">
+      <div class="container">
+        <h2 class="title is-1">Locations</h2>
+        <div class="columns">
+          <div class="column">
+            <h3>Shoreside Vale</h3>
+            <p>Suburban residential area</p>
+            <p><img src="<%= require('./src/images/shoreside.gif') %>" alt="An overlook map of the Shoreside Vale in Liberty City"></p>
+          </div>
+
+          <div class="column">
+            <h3>Staunton Island</h3>
+            <p>Bustling commercial district</p>
+            <p><img src="<%= require('./src/images/staunton.gif') %>" alt="An overlook map of the Staunton Island in Liberty City"></p>
+          </div>
+
+          <div class="column">
+            <h3>Portland</h3>
+            <p>Industrial zoned island</p>
+            <p><img src="<%= require('./src/images/portland.gif') %>" alt="An overlook map of Portland in Liberty City"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens" class="section content">
+      <div class="container">
+        <h2 class="title is-1">Screens</h2>
+        <p>Screenshots gallery. Click to see the full picture.</p>
+
+        <div class="columns">
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss1.jpg') %>" alt="Claude holding a shotgun and walking on a park">
             </a>
-          </li>
+          </div>
 
-          <li>
-            <a href="#">
-              <strong>Staunton Island</strong>
-              Bustling commercial district
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss2.jpg') %>" alt="Claude firing a shotgun in front of a mansion">
             </a>
-          </li>
+          </div>
 
-          <li>
-            <a href="#">
-              <strong>Portland</strong>
-              Industrial zoned island
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss3.jpg') %>" alt="An armed police officer in front of his car">
             </a>
-          </li>
-        </ul>
-      </nav>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss10.jpg') %>" alt="Cars driving in a street">
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss5.jpg') %>" alt="Claude running with a club in his hand and a car behind him">
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss6.jpg') %>" alt="Many cars waiting for a green light to drive">
+            </a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss7.jpg') %>" alt="A truck with its lights turned on">
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss8.jpg') %>" alt="Claude walking with a shotgun. A taxi cab and buildings on the back.">
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="javascript:void(0)" title="See image in full resolution">
+              <img src="<%= require('./src/images/screens/ss9.jpg') %>" alt="Claude running with a pistol on his hand. A street with a few cars on the back.">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="info">
-      <h2>Info</h2>
-      <h3>Liberty City, USA. Welcome to America's worst city.</h3>
-      <p>You've been betrayed and left for dead. Now you're taking revenge, unless the city gets you first. Mob bosses need a favor, crooked cops need help and street gangs want you dead. You'll have to rob, steal and kill just to stay out of serious trouble. Anything can happen out here.</p>
-      <p>Featuring a fully 3-D living city, a combination of narrative driven and non-linear gameplay and a completely open environment, Grand Theft Auto III represents a huge leap forward in interactive entertainment. For the first time, players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city, in which anything can happen and probably will.</p>
-      <p>With a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, a huge array of street ready weapons and some of the seediest characters in video game history, Grand Theft Auto 3 is a sprawling epic which will show you that sometimes, crime can pay and sometimes it can pay you back. Available now for PlayStation®2, Xbox, PC and Macintosh.</p>
-    </section>
+    <section id="buy-now" class="section content">
+      <div class="container">
+        <h2 class="title is-1">Buy now</h2>
+        <p>Order your copy now from one of these fine e-tailers:</p>
+        <div class="columns">
+          <div class="column">
+            <a href="http://store.steampowered.com/app/12100/">
+              <img src='<%= require('./src/images/sellers/steam.png') %>' alt="Steam">
+            </a>
+          </div>
 
-    <section id="screens">
-      <h2>Screens</h2>
-      <p>Screenshots galore</p>
-      <p>Click to launch screens viewer </p>
-    </section>
+          <div class="column">
+            <a title="Buy on Sony Entertainment Network" href="https://store.sonyentertainmentnetwork.com/#!/en-us/games/grand-theft-auto-3/cid=UP9000-NPUD20062_00-0000000000000000">
+              <img src="<%= require('./src/images/sellers/sony-network-entertainment.png') %>" alt="Sony Entertainment Network">
+            </a>
+          </div>
 
-    <section id="movies">
-      <h2>Movies</h2>
-      <h3>The official trailer:</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/WUi3davvBmM" frameborder="0" allowfullscreen></iframe>
-    </section>
+          <div class="column">
+            <a title="Buy on Xbox Live" href="http://marketplace.xbox.com/en-US/Product/Grand-Theft-Auto-III/66acd000-77fe-1000-9115-d80454540881">
+              <img src="<%= require('./src/images/sellers/xbox-live.png') %>" alt="Xbox Live">
+            </a>
+          </div>
+        </div>
 
-    <section id="buy-now">
-      <h2>Buy now</h2>
-      <p>Order your copy now from one of these fine e-tailers:</p>
-      <ul>
-        <li><a href="http://www.gamestop.com/ps2/games/grand-theft-auto-trilogy/103806">GameStop</a></li>
-        <li><a href="https://store.sonyentertainmentnetwork.com/#!/en-us/games/grand-theft-auto-3/cid=UP9000-NPUD20062_00-0000000000000000">Sony Entertainment System</a></li>
-        <li><a href="http://marketplace.xbox.com/en-US/Product/Grand-Theft-Auto-III/66acd000-77fe-1000-9115-d80454540881">Xbox Live</a></li>
-        <li><a href="http://store.steampowered.com/app/12100/">Steam</a></li>
-        <li><a href="http://www.rockstarwarehouse.com/promo?promoID=95196800&linkid=gta3&_ga=2.124446210.964912273.1498607013-992924468.1498607013">Rockstar Warehouse</a></li>
-        <li><a href="https://itunes.apple.com/us/app/grand-theft-auto-iii/id479662730?at=1l3v92M">App Store</a></li>
-        <li><a href="https://market.android.com/details?id=com.rockstar.gta3&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5yb2Nrc3Rhci5ndGEzIl0">Google Play</a></li>
-        <li><a href="http://www.amazon.com/Rockstar-Games-Grand-Theft-Auto/dp/B00JF9SSQK/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=rockgame-20&linkId=EN5RTQ4QH6QGDGPA">Amazon Apps</a></li>
-      </ul>
+        <div class="columns">
+          <div class="column">
+            <a title="Buy on Apple App Store" href="https://itunes.apple.com/us/app/grand-theft-auto-iii/id479662730?at=1l3v92M">
+              <img src="<%= require('./src/images/sellers/app-store.png') %>" alt="Apple App Store">
+            </a>
+          </div>
+
+          <div class="column">
+            <a title="Buy on Google Play Store" href="https://market.android.com/details?id=com.rockstar.gta3&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5yb2Nrc3Rhci5ndGEzIl0">
+              <img src="<%= require('./src/images/sellers/play-store.png') %>" alt="Google Play Store">
+            </a>
+          </div>
+
+          <div class="column">
+            <a title="Buy on Amazon Apps" href="http://www.amazon.com/Rockstar-Games-Grand-Theft-Auto/dp/B00JF9SSQK/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=rockgame-20&linkId=EN5RTQ4QH6QGDGPA">
+              <img src="<%= require('./src/images/sellers/amazon-store.png') %>" alt="Amazon Apps">
+            </a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 is-offset-3">
+            <a title="Buy on GameStop" href="http://www.gamestop.com/ps2/games/grand-theft-auto-trilogy/103806">
+              <img src="<%= require('./src/images/sellers/gamestop.png') %>" alt="GameStop">
+            </a>
+          </div>
+
+          <div class="column is-2">
+            <a title="Buy on Rockstar Warehouse" href="http://www.rockstarwarehouse.com/promo?promoID=95196800&linkid=gta3&_ga=2.124446210.964912273.1498607013-992924468.1498607013">
+              <img src="<%= require('./src/images/sellers/rockstar.png') %>" alt="Rockstar Warehouse">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

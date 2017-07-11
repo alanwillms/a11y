@@ -1,0 +1,19 @@
+#info {
+  overflow: hidden;
+
+  figure {
+    max-width: 100%;
+    width: 300px;
+
+    @media (min-width: 769px) {
+      & {
+        padding-left: 1rem;
+        float: right;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
