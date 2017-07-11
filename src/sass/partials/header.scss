@@ -4,4 +4,12 @@
   .is-transparent {
     background-color: transparent;
   }
+
+  .navbar-link.is-active,
+  .navbar-link:hover,
+  a.navbar-item.is-active,
+  a.navbar-item:hover,
+  .navbar-burger:hover {
+    background-color: #a28f5f;
+  }
 }
