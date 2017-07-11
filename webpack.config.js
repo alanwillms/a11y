@@ -44,6 +44,11 @@ module.exports = {
           limit: 10000,
           name: 'dist/[name].[hash:7].[ext]'
         }
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [__dirname + '/src']
       }
     ]
   },
@@ -53,6 +58,10 @@ module.exports = {
     new HtmlWebpackPlugin({template: __dirname + '/index.html'}),
     new ExtractTextPlugin('styles.[contenthash].css'),
     new webpack.optimize.UglifyJsPlugin(),
-    new OptimizeCssAssetsPlugin()
+    new OptimizeCssAssetsPlugin(),
+    new webpack.ProvidePlugin({
+      jquery: 'jQuery',
+      '$': 'jQuery'
+    })
   ]
 };
