@@ -2,8 +2,10 @@
   a {
     display: block;
     height: 100%;
+    text-align: center;
 
     img {
+      max-width: 50%;
       vertical-align: middle;
     }
   }

@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: 'file-loader',
         options: {
           limit: 10000,
           name: 'dist/[name].[hash:7].[ext]'
@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpg|gif)$/,
-        loader: 'url-loader',
+        loader: 'file-loader',
         options: {
           limit: 10000,
           name: 'dist/[name].[hash:7].[ext]'
@@ -50,11 +50,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new FaviconsWebpackPlugin(__dirname + '/src/images/favicon.png'),
-    new HtmlWebpackPlugin({
-      template: __dirname + '/index.html'
-    }),
+    new HtmlWebpackPlugin({template: __dirname + '/index.html'}),
     new ExtractTextPlugin('styles.[contenthash].css'),
     new webpack.optimize.UglifyJsPlugin(),
     new OptimizeCssAssetsPlugin()
   ]
-}
+};

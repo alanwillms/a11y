@@ -11,9 +11,7 @@
       <div class="container">
         <nav class="navbar is-transparent">
           <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-              <img src="<%= require('./src/images/logo.png') %>" alt="Grande Theft Auto 3 logo" height="28">
-            </a>
+            <a class="navbar-item" href="index.html">Grand Theft Auto 3</a>
 
             <div id="navMenuToggler" class="navbar-burger burger" data-target="navMenu">
               <span></span>
@@ -24,7 +22,7 @@
 
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item" href="#info">Info</a>
+              <a class="navbar-item" href="#info">About</a>
               <a class="navbar-item" href="#locations">Locations</a>
               <a class="navbar-item" href="#screens">Screens</a>
               <a class="navbar-item" href="#buy-now">Buy now</a>
@@ -34,10 +32,9 @@
       </div>
     </header>
 
-    <section id="info" class="section content">
+    <section id="info" class="hero is-dark section content">
       <div class="container">
-        <h2 class="title is-1">Grand Theft Auto 3</h2>
-        <h3 class="subtitle is-2">Liberty City, USA. Welcome to America's worst city.</h3>
+        <h2 class="title is-2">Liberty City, USA. Welcome to America's worst city.</h2>
         <figure title="Grand Theft Auto 3 cover art">
           <img src="<%= require('./src/images/cover.jpg') %>" alt="Cover art of Grand Theft Auto 3 media disc, displaying a police helicopter, two cars and the face of bandits">
         </figure>
@@ -72,7 +69,7 @@
       </div>
     </section>
 
-    <section id="screens" class="section content">
+    <section id="screens" class="hero is-dark section content">
       <div class="container">
         <h2 class="title is-1">Screens</h2>
         <p>Screenshots gallery. Click to see the full picture.</p>
@@ -143,7 +140,8 @@
       <div class="container">
         <h2 class="title is-1">Buy now</h2>
         <p>Order your copy now from one of these fine e-tailers:</p>
-        <div class="columns">
+
+        <div class="columns is-vcentered">
           <div class="column">
             <a href="http://store.steampowered.com/app/12100/">
               <img src='<%= require('./src/images/sellers/steam.png') %>' alt="Steam">
@@ -163,7 +161,7 @@
           </div>
         </div>
 
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column">
             <a title="Buy on Apple App Store" href="https://itunes.apple.com/us/app/grand-theft-auto-iii/id479662730?at=1l3v92M">
               <img src="<%= require('./src/images/sellers/app-store.png') %>" alt="Apple App Store">
@@ -183,7 +181,7 @@
           </div>
         </div>
 
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column is-4 is-offset-3">
             <a title="Buy on GameStop" href="http://www.gamestop.com/ps2/games/grand-theft-auto-trilogy/103806">
               <img src="<%= require('./src/images/sellers/gamestop.png') %>" alt="GameStop">
@@ -198,5 +196,24 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer content hero is-dark">
+      <div class="container">
+        <p>© 1999-2013 Rockstar Games, Inc.</p>
+        <p>
+          Rockstar Games, the Rockstar Games, Grand Theft Auto, Grand Theft Auto III,
+          Take-Two Interactive and their respective logos are trademarks and/or
+          registered trademarks of Take-Two Interactive Software, Inc. in the
+          U.S.A. and/or foreign countries.
+        </p>
+        <p>
+          The ratings icon(s) and all other
+          marks and trademarks are properties of their respective owners.
+        </p>
+        <p>
+          All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
