@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <title>Grand Theft Auto 3</title>
     <meta name="description" content="Rockstar Games Presents the Grand Theft Auto 3 for the Playstation2">
@@ -11,7 +11,7 @@
       <div class="container">
         <nav class="navbar is-transparent">
           <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">Grand Theft Auto 3</a>
+            <a class="navbar-item" href="/">Grand Theft Auto 3</a>
 
             <div id="navMenuToggler" class="navbar-burger burger" data-target="navMenu">
               <span></span>
@@ -76,19 +76,19 @@
 
         <div class="columns">
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss1.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss1.jpg') %>" alt="Claude holding a shotgun and walking on a park">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss2.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss2.jpg') %>" alt="Claude firing a shotgun in front of a mansion">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss3.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss3.jpg') %>" alt="An armed police officer in front of his car">
             </a>
           </div>
@@ -96,19 +96,19 @@
 
         <div class="columns">
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss10.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss10.jpg') %>" alt="Cars driving in a street">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss5.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss5.jpg') %>" alt="Claude running with a club in his hand and a car behind him">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss6.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss6.jpg') %>" alt="Many cars waiting for a green light to drive">
             </a>
           </div>
@@ -116,19 +116,19 @@
 
         <div class="columns">
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss7.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss7.jpg') %>" alt="A truck with its lights turned on">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss8.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss8.jpg') %>" alt="Claude walking with a shotgun. A taxi cab and buildings on the back.">
             </a>
           </div>
 
           <div class="column">
-            <a href="javascript:void(0)" title="See image in full resolution">
+            <a href="<%= require('./src/images/screens/ss9.jpg') %>" title="See image in full resolution">
               <img src="<%= require('./src/images/screens/ss9.jpg') %>" alt="Claude running with a pistol on his hand. A street with a few cars on the back.">
             </a>
           </div>
@@ -216,7 +216,7 @@
       </div>
     </footer>
 
-    <div id="screen-modal" class="modal">
+    <div id="screen-modal" class="modal" aria-hidden="true">
       <div class="modal-background"></div>
       <div class="modal-content">
         <div class="box"></div>
